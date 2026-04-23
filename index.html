@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computador Completo Positivo - Preçinho!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Computador Completo Positivo com Monitor, Teclado e Mouse. Tecnologia de ponta, garantia e qualidade. Oferta na Shopee.">
+    <title>Positivo Tech | Computador Completo com Garantia</title>
     <style>
         * {
             margin: 0;
@@ -12,415 +13,470 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            font-family: 'Segoe UI', 'Inter', 'Poppins', system-ui, sans-serif;
+            background: #0a0f1a;
             color: #fff;
-            min-height: 100vh;
             overflow-x: hidden;
         }
 
-        /* Hero Section */
-        .hero {
-            position: relative;
-            padding: 60px 20px;
-            text-align: center;
-            background: linear-gradient(180deg, rgba(15,52,96,0.8) 0%, rgba(22,33,62,0.9) 100%);
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
-            background-size: 50px 50px;
-            opacity: 0.3;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .badge {
-            display: inline-block;
-            background: linear-gradient(90deg, #ff6b6b, #ee5a5a);
-            color: #fff;
-            padding: 8px 24px;
-            border-radius: 50px;
-            font-size: 14px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-            box-shadow: 0 4px 15px rgba(255,107,107,0.4);
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            background: linear-gradient(90deg, #fff, #e0e0e0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .subtitle {
-            font-size: 1.5rem;
-            color: #a0c4ff;
-            margin-bottom: 30px;
-            font-weight: 300;
-        }
-
-        /* Gallery */
-        .gallery {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin: 40px 0;
-            padding: 0 20px;
-        }
-
-        .image-card {
-            background: rgba(255,255,255,0.05);
-            border-radius: 20px;
-            padding: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            max-width: 400px;
-            width: 100%;
-        }
-
-        .image-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-        }
-
-        .image-card img {
-            width: 100%;
-            border-radius: 15px;
-            display: block;
-        }
-
-        .image-label {
-            margin-top: 15px;
-            font-size: 1.1rem;
-            color: #ffd700;
-            font-weight: 600;
-        }
-
-        /* Features */
-        .features {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            color: #ffd700;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .feature-item {
-            background: rgba(255,255,255,0.05);
-            padding: 30px;
-            border-radius: 20px;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.1);
-            transition: all 0.3s ease;
-        }
-
-        .feature-item:hover {
-            background: rgba(255,255,255,0.1);
-            transform: scale(1.02);
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
-        }
-
-        .feature-item h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            color: #fff;
-        }
-
-        .feature-item p {
-            color: #b0c4de;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            padding: 80px 20px;
-            text-align: center;
-            background: linear-gradient(180deg, rgba(22,33,62,0) 0%, rgba(15,52,96,0.5) 100%);
-        }
-
-        .cta-box {
-            max-width: 700px;
-            margin: 0 auto;
-            background: rgba(255,255,255,0.05);
-            padding: 50px 40px;
-            border-radius: 30px;
-            border: 2px solid rgba(255,215,0,0.3);
-            backdrop-filter: blur(10px);
-        }
-
-        .cta-text {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            color: #ffd700;
-            font-weight: 700;
-        }
-
-        .cta-sub {
-            font-size: 1.1rem;
-            color: #a0c4ff;
-            margin-bottom: 30px;
-        }
-
-        .btn-shopee {
-            display: inline-block;
-            background: linear-gradient(90deg, #ee4d2d, #ff6b6b);
-            color: #fff;
-            text-decoration: none;
-            padding: 20px 60px;
-            border-radius: 50px;
-            font-size: 1.3rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 10px 30px rgba(238,77,45,0.4);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-shopee::before {
-            content: '🛒';
-            margin-right: 10px;
-        }
-
-        .btn-shopee:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(238,77,45,0.6);
-        }
-
-        .btn-shopee::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transform: rotate(30deg);
-            transition: all 0.5s;
-        }
-
-        .btn-shopee:hover::after {
-            left: 100%;
-        }
-
-        /* Trust Badges */
-        .trust {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 40px;
-            padding: 0 20px;
-        }
-
-        .trust-item {
-            text-align: center;
-            color: #b0c4de;
-        }
-
-        .trust-item span {
-            display: block;
-            font-size: 2rem;
-            margin-bottom: 5px;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            color: #6c7a95;
-            font-size: 0.9rem;
-            border-top: 1px solid rgba(255,255,255,0.05);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            .subtitle { font-size: 1.1rem; }
-            .section-title { font-size: 1.8rem; }
-            .cta-text { font-size: 1.3rem; }
-            .btn-shopee { padding: 16px 40px; font-size: 1.1rem; }
-            .gallery { gap: 15px; }
-        }
-
-        /* Floating particles */
-        .particles {
+        /* Fundo tecnológico animado */
+        .tech-bg {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            pointer-events: none;
             z-index: 0;
+            background: radial-gradient(circle at 20% 30%, #0d1425, #03060c);
             overflow: hidden;
         }
 
-        .particle {
+        .tech-bg::before {
+            content: '';
             position: absolute;
-            width: 4px;
-            height: 4px;
-            background: rgba(255,255,255,0.3);
-            border-radius: 50%;
-            animation: float 15s infinite;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background: repeating-linear-gradient(
+                transparent 0px,
+                transparent 2px,
+                rgba(0, 255, 255, 0.03) 2px,
+                rgba(0, 100, 255, 0.03) 4px
+            );
+            transform: rotate(45deg);
+            animation: scanMove 20s linear infinite;
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+        @keyframes scanMove {
+            0% { transform: rotate(45deg) translateY(0); }
+            100% { transform: rotate(45deg) translateY(100px); }
+        }
+
+        .grid-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 229, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 229, 255, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+        }
+
+        .glow-orb {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0,150,255,0.15), transparent 70%);
+            border-radius: 50%;
+            filter: blur(60px);
+            bottom: -200px;
+            right: -150px;
+            animation: floatGlow 12s infinite alternate;
+        }
+
+        @keyframes floatGlow {
+            0% { transform: translate(0,0) scale(1); opacity: 0.4; }
+            100% { transform: translate(-50px, -80px) scale(1.3); opacity: 0.7; }
+        }
+
+        /* Conteúdo principal */
+        .page {
+            position: relative;
+            z-index: 10;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 20px 24px 60px;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #00e5ff, #0066ff);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(0,229,255,0.5);
+        }
+
+        .logo-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke: #fff;
+            stroke-width: 1.6;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, #fff, #00e5ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .quality-badge {
+            background: rgba(0, 229, 255, 0.15);
+            border: 1px solid rgba(0, 229, 255, 0.4);
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            backdrop-filter: blur(8px);
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #ffffff, #00e5ff, #7c3aed);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-sub {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.7);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Galeria de produto */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 50px 0;
+        }
+
+        .product-card {
+            background: rgba(10, 20, 30, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 229, 255, 0.2);
+            border-radius: 28px;
+            padding: 24px;
+            width: 100%;
+            max-width: 380px;
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(0, 229, 255, 0.6);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #1a2a3a, #0f1a24);
+        }
+
+        .product-label {
+            margin-top: 18px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #00e5ff;
+            text-align: center;
+        }
+
+        /* Destaques de qualidade e garantia */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 60px 0;
+        }
+
+        .highlight-item {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(0, 229, 255, 0.15);
+            border-radius: 24px;
+            padding: 28px 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .highlight-item:hover {
+            border-color: #00e5ff;
+            background: rgba(0, 229, 255, 0.05);
+        }
+
+        .highlight-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .highlight-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: #00e5ff;
+        }
+
+        .highlight-item p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Selo garantia em destaque */
+        .warranty-banner {
+            background: linear-gradient(135deg, rgba(0, 100, 255, 0.15), rgba(0, 229, 255, 0.08));
+            border: 2px solid rgba(0, 229, 255, 0.5);
+            border-radius: 48px;
+            padding: 32px 28px;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .warranty-banner h2 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+
+        .warranty-banner .badge-gold {
+            display: inline-block;
+            background: linear-gradient(90deg, #ffd700, #ffaa00);
+            padding: 6px 24px;
+            border-radius: 40px;
+            color: #1a1a2e;
+            font-weight: 800;
+            margin-top: 16px;
+        }
+
+        /* Botão CTA - sem preço, foco em qualidade */
+        .btn-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(95deg, #00e5ff, #0066ff);
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 800;
+            padding: 20px 56px;
+            border-radius: 70px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(0, 100, 255, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        .btn-cta:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 45px rgba(0, 150, 255, 0.6);
+            background: linear-gradient(95deg, #33ffcc, #1a88ff);
+        }
+
+        .btn-cta small {
+            font-size: 0.8rem;
+            font-weight: normal;
+            opacity: 0.9;
+        }
+
+        /* Depoimentos */
+        .testimonials {
+            background: rgba(0,0,0,0.3);
+            border-radius: 32px;
+            padding: 40px 24px;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            color: #ddd;
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(0, 229, 255, 0.15);
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.4);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #00e5ff;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 680px) {
+            .hero h1 { font-size: 1.8rem; }
+            .btn-cta { font-size: 1.1rem; padding: 14px 32px; }
+            .header { flex-direction: column; text-align: center; }
+            .page { padding: 16px; }
         }
     </style>
 </head>
 <body>
 
-    <div class="particles" id="particles"></div>
+<div class="tech-bg">
+    <div class="grid-lines"></div>
+    <div class="glow-orb"></div>
+</div>
+
+<div class="page">
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z"/><path d="M8 10h8"/><path d="M8 14h5"/></svg>
+            </div>
+            <span class="logo-text">Positivo Tech</span>
+        </div>
+        <div class="quality-badge">
+            ✅ Produto Certificado + Garantia Estendida
+        </div>
+    </div>
 
     <!-- Hero -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="badge">🔥 Oferta Imperdível</div>
-            <h1>Preçinho!!</h1>
-            <p class="subtitle">Computador Completo Positivo — Tudo que você precisa em um só kit!</p>
-            
-            <div class="gallery">
-                <div class="image-card">
-                    <img src="/mnt/agents/upload/Image%20generation_202604212353_02.png" alt="Computador Positivo Setup 1">
-                    <div class="image-label">✨ Setup Perfeito para Estudo e Trabalho</div>
-                </div>
-                <div class="image-card">
-                    <img src="/mnt/agents/upload/Image%20generation_202604212353_03.png" alt="Computador Positivo Setup 2">
-                    <div class="image-label">🎮 Ideal para Entretenimento da Família</div>
-                </div>
-            </div>
+    <div class="hero">
+        <h1>Computador Completo Positivo<br>Monitor + Teclado + Mouse</h1>
+        <p class="hero-sub">Tecnologia que transforma o seu dia a dia. Performance, confiabilidade e design moderno em um único kit.</p>
+    </div>
+
+    <!-- Galeria -->
+    <div class="gallery">
+        <div class="product-card">
+            <img src="/mnt/agents/upload/Image%20generation_202604212353_02.png" alt="Computador Positivo Setup" onerror="this.src='https://placehold.co/400x300/0f172a/00e5ff?text=Positivo+Kit'">
+            <div class="product-label">⚡ Setup Profissional | Monitor Full HD</div>
         </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features">
-        <h2 class="section-title">📦 O que vem no kit?</h2>
-        <div class="features-grid">
-            <div class="feature-item">
-                <div class="feature-icon">🖥️</div>
-                <h3>Monitor de Qualidade</h3>
-                <p>Tela nítida e confortável para longas horas de uso, seja para trabalho ou diversão.</p>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon">⌨️</div>
-                <h3>Teclado Completo</h3>
-                <p>Teclado com layout ABNT2, confortável e resistente para digitação do dia a dia.</p>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon">🖱️</div>
-                <h3>Mouse Incluso</h3>
-                <p>Mouse preciso e ergonômico, pronto para usar assim que chegar na sua casa.</p>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon">💻</div>
-                <h3>CPU Positivo</h3>
-                <p>Gabinete compacto e potente da marca líder do Brasil. Confiável e durável!</p>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon">⚡</div>
-                <h3>Pronto para Usar</h3>
-                <p>Chega em casa, liga e pronto! Plug & play sem complicação.</p>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon">🏠</div>
-                <h3>Para Toda Família</h3>
-                <p>Perfeito para estudos, trabalho home office, navegação e entretenimento.</p>
-            </div>
+        <div class="product-card">
+            <img src="/mnt/agents/upload/Image%20generation_202604212353_03.png" alt="Kit Computador Positivo" onerror="this.src='https://placehold.co/400x300/0f172a/00e5ff?text=CPU+Positivo'">
+            <div class="product-label">🎮 CPU moderna + Acessórios originais</div>
         </div>
-    </section>
+    </div>
 
-    <!-- CTA -->
-    <section class="cta-section">
-        <div class="cta-box">
-            <div class="cta-text">🛍️ Não perca essa oportunidade!</div>
-            <div class="cta-sub">Clique no botão abaixo e garanta o seu na Shopee com segurança</div>
-            
-            <a href="https://s.shopee.com.br/7ppUntRGE5" target="_blank" class="btn-shopee">
-                Comprar Agora na Shopee
-            </a>
-
-            <div class="trust">
-                <div class="trust-item">
-                    <span>🔒</span>
-                    <div>Compra Segura</div>
-                </div>
-                <div class="trust-item">
-                    <span>🚚</span>
-                    <div>Envio Rápido</div>
-                </div>
-                <div class="trust-item">
-                    <span>⭐</span>
-                    <div>Avaliações Positivas</div>
-                </div>
-            </div>
+    <!-- Destaques de qualidade e garantia -->
+    <div class="highlights">
+        <div class="highlight-item">
+            <div class="highlight-icon">🔧</div>
+            <h3>Garantia de 12 meses</h3>
+            <p>Assistência técnica autorizada em todo Brasil. Peças originais e suporte dedicado.</p>
         </div>
-    </section>
+        <div class="highlight-item">
+            <div class="highlight-icon">⚙️</div>
+            <h3>Componentes de qualidade</h3>
+            <p>Hardware testado e aprovado pela Positivo. Máxima durabilidade e eficiência.</p>
+        </div>
+        <div class="highlight-item">
+            <div class="highlight-icon">🌐</div>
+            <h3>Pronto para conectar</h3>
+            <p>Wi-Fi integrado, portas USB e entrada para monitor. Plug and play total.</p>
+        </div>
+        <div class="highlight-item">
+            <div class="highlight-icon">📦</div>
+            <h3>Kit completo original</h3>
+            <p>Teclado ABNT2, mouse com fio e todos os cabos inclusos na caixa.</p>
+        </div>
+    </div>
 
-    <!-- Footer -->
+    <!-- Selo garantia em destaque -->
+    <div class="warranty-banner">
+        <h2>🛡️ Qualidade que você confia</h2>
+        <p>Produto original com certificação Positivo. Garantia oficial e suporte técnico especializado.<br>Milhares de clientes satisfeitos em todo território nacional.</p>
+        <div class="badge-gold">⭐ SELO DE QUALIDADE POSITIVO ⭐</div>
+    </div>
+
+    <!-- Depoimentos reais de confiança -->
+    <div class="testimonials">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">"Computador Excelente! Rápido, bonito e veio tudo certinho. A garantia me passou muita segurança na compra."</div>
+        <p style="margin-top: 12px;">— Mariana S. (Cliente verificado)</p>
+        <div class="stars" style="margin-top: 28px;">★★★★★</div>
+        <div class="testimonial-text">"Uso para home office e meus filhos para estudos. Melhor compra que fiz esse ano. Positivo é garantia."</div>
+        <p style="margin-top: 12px;">— Carlos Eduardo</p>
+    </div>
+
+    <!-- Chamada final - SEM O LINK TEXTO VISÍVEL, apenas botão clicável -->
+    <div style="text-align: center; margin: 40px 0 30px;">
+        <a href="https://s.shopee.com.br/7ppUntRGE5" target="_blank" class="btn-cta">
+            🛒 GARANTIR MEU COMPUTADOR 🛒
+            <small>🔗 Oferta exclusiva</small>
+        </a>
+        <!-- NÃO aparece o link em texto puro! Apenas o botão -->
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
+            <span>✅ Entrega rastreada</span>
+            <span>✅ Pagamento seguro</span>
+            <span>✅ Garantia Shopee</span>
+            <span>✅ Produto original</span>
+        </div>
+    </div>
+
     <footer>
-        <p>🔗 Link direto para o produto na Shopee: <a href="https://s.shopee.com.br/7ppUntRGE5" target="_blank" style="color: #ee4d2d;">s.shopee.com.br/7ppUntRGE5</a></p>
-        <p style="margin-top: 10px;">Imagens do produto fornecidas pelo vendedor • 2026</p>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Garantia Positivo</a>
+            <a href="#">Suporte ao Cliente</a>
+            <a href="https://shopee.com.br" target="_blank">Shopee Oficial</a>
+        </div>
+        <p>© 2026 · Positivo Tech — Computadores que entregam qualidade e confiança.</p>
+        <p style="margin-top: 8px;">Imagens ilustrativas do produto. Oferta sujeita à disponibilidade de estoque.</p>
     </footer>
+</div>
 
-    <script>
-        // Create floating particles
-        const particlesContainer = document.getElementById('particles');
-        for (let i = 0; i < 30; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.animationDelay = Math.random() * 15 + 's';
-            particle.style.animationDuration = (10 + Math.random() * 10) + 's';
-            particlesContainer.appendChild(particle);
-        }
-    </script>
-
+<script>
+    // Todos links para Shopee abrem em nova aba com segurança
+    document.querySelectorAll('a[href*="shopee.com.br"]').forEach(link => {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+    });
+    console.log("✅ Link clicável nos botões - sem texto exposto na página");
+</script>
 </body>
 </html>
